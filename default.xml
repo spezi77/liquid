@@ -4,6 +4,9 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
 
+  <remote  name="android-security"
+           fetch="https://github.com/android-security/" />
+
   <remote  name="gh"
            fetch="https://github.com/" />
 
@@ -30,14 +33,11 @@
 
   <project path="abi/cpp" name="platform/abi/cpp" />
   <project path="android" name="liquid" remote="spz" revision="kitkat" />
-  <project path="art" name="android_art" remote="spz" revision="ls-kitkat" />
   <project path="bionic" name="android_bionic" remote="spz" revision="ls-kitkat" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="cm" revision="cm-11.0" />
-  <project path="dalvik" name="android_dalvik" remote="spz" revision="ls-kitkat" />
   <project path="development" name="android_development" remote="sr" revision="kk4.4" />
   <project path="device/common" name="android_device_common" remote="cm" revision="cm-11.0" />
-  <project path="external/aac" name="android_external_aac" remote="cm" revision="cm-11.0" />
   <project path="external/android-clat" name="platform/external/android-clat" />
   <project path="external/android-mock" name="android_external_android-mock" remote="cm" revision="cm-11.0" />
   <project path="external/ant-glob" name="platform/external/ant-glob" />
@@ -53,7 +53,6 @@
   <project path="external/bison" name="platform/external/bison" />
   <project path="external/blktrace" name="platform/external/blktrace" />
   <project path="external/bluetooth/bluedroid" name="android_external_bluetooth_bluedroid" remote="cm" revision="cm-11.0" />
-  <project path="external/bouncycastle" name="platform/external/bouncycastle" />
   <project path="external/bsdiff" name="platform/external/bsdiff" />
   <project path="external/busybox" name="android_external_busybox" remote="spz" revision="ls-kitkat" />
   <project path="external/bzip2" name="platform/external/bzip2" />
@@ -62,7 +61,6 @@
   <project path="external/chromium" name="android_external_chromium" remote="spz" revision="linaro_android_4.4.4" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" />
-  <project path="external/chromium_org" name="android_external_chromium_org" remote="spz" revision="ls-kitkat" />
   <project path="external/chromium_org/sdch/open-vcdiff" name="platform/external/chromium_org/sdch/open-vcdiff" />
   <project path="external/chromium_org/testing/gtest" name="platform/external/chromium_org/testing/gtest" />
   <project path="external/chromium_org/third_party/angle" name="platform/external/chromium_org/third_party/angle" />
@@ -74,7 +72,6 @@
   <project path="external/chromium_org/third_party/libphonenumber/src/phonenumbers" name="platform/external/chromium_org/third_party/libphonenumber/src/phonenumbers" />
   <project path="external/chromium_org/third_party/libphonenumber/src/resources" name="platform/external/chromium_org/third_party/libphonenumber/src/resources" />
   <project path="external/chromium_org/third_party/mesa/src" name="platform/external/chromium_org/third_party/mesa/src" />
-  <project path="external/chromium_org/third_party/openssl" name="android_external_chromium_org_third_party_openssl" remote="sr" revision="kk4.4" />
   <project path="external/chromium_org/third_party/opus/src" name="platform/external/chromium_org/third_party/opus/src" />
   <project path="external/chromium_org/third_party/sfntly/cpp/src" name="platform/external/chromium_org/third_party/sfntly/cpp/src" />
   <project path="external/chromium_org/third_party/ots" name="platform/external/chromium_org/third_party/ots" />
@@ -170,7 +167,6 @@
   <project path="external/libusb-compat" name="platform/external/libusb-compat" />
   <project path="external/libusbx" name="android_external_libusbx" remote="cm" revision="cm-11.0" />
   <project path="external/libvorbis" name="platform/external/libvorbis" />
-  <project path="external/libvpx" name="platform/external/libvpx" />
   <project path="external/libxml2" name="android_external_libxml2" remote="sr" revision="kk4.4" />
   <project path="external/libxslt" name="platform/external/libxslt" />
   <project path="external/libyuv" name="platform/external/libyuv" />
@@ -203,7 +199,6 @@
   <project path="external/opencv" name="platform/external/opencv" />
   <project path="external/openfst" name="platform/external/openfst" />
   <project path="external/openssh" name="android_external_openssh" remote="spz" revision="linaro_android_4.4.4" />
-  <project path="external/openssl" name="android_external_openssl" remote="sr" revision="kk4.4" />
   <project path="external/oprofile" name="android_external_oprofile" remote="spz" revision="ls-kitkat" />
   <project path="external/pigz" name="android_external_pigz" remote="cm" revision="cm-11.0" />
   <project path="external/pixman" name="platform/external/pixman" />
@@ -223,10 +218,8 @@
   <project path="external/sil-fonts" name="platform/external/sil-fonts" />
   <project path="external/smack" name="platform/external/smack" />
   <project path="external/smali" name="platform/external/smali" />
-  <project path="external/sonivox" name="android_external_sonivox" remote="spz" revision="linaro_android_4.4.4" />
   <project path="external/speex" name="platform/external/speex" />
   <project path="external/spongycastle" name="android_external_spongycastle" remote="cm" revision="cm-11.0" />
-  <project path="external/sqlite" name="android_external_sqlite" remote="cm" revision="cm-11.0" />
   <project path="external/srec" name="platform/external/srec" />
   <project path="external/srtp" name="platform/external/srtp" />
   <project path="external/stagefright-plugins" name="android_external_stagefright-plugins" remote="cm" revision="cm-11.0" />
@@ -245,7 +238,6 @@
   <project path="external/valgrind" name="platform/external/valgrind" />
   <project path="external/webp" name="android_external_webp" remote="spz" revision="ls-kitkat" />
   <project path="external/webrtc" name="platform/external/webrtc" />
-  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="cm" revision="cm-11.0" />
   <project path="external/wpa_supplicant_8_ti" name="android_external_wpa_supplicant_8_ti" remote="cm" revision="cm-11.0" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" />
@@ -337,7 +329,6 @@
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
   <project path="packages/apps/ThemeChooser" name="android_packages_apps_ThemeChooser" remote="cm" revision="cm-11.0" />
-  <project path="packages/apps/UnifiedEmail" name="packages_apps_UnifiedEmail" remote="sr" revision="kk4.4" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="sr" revision="kk4.4" />
   <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
   <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
@@ -408,15 +399,27 @@
   <project path="vendor/htc" name="android_vendor_htc" remote="spz" revision="kitkat" />
 
   <!-- Track forked projects with Stagefright 2.0 patches -->
-  <project path="system/security" name="android_system_security" remote="spz" revision="cm-11.0" />
   <project path="external/flac" name="android_external_flac" remote="spz" revision="cm-11.0" />
-  <project path="external/skia" name="android_external_skia" remote="spz" revision="cm-11.0" />
   <project path="system/core" name="android_system_core" remote="spz" revision="ls-kitkat" />
   <project path="frameworks/av" name="android_frameworks_av" remote="spz" revision="ls-kitkat" />
   <project path="libcore" name="android_libcore" remote="spz" revision="ls-kitkat" />
 
-  <!-- Track forked projects with security patches by Google -->
-  <project path="external/tremolo" name="android_external_tremolo" remote="spz" revision="master" />
+  <!-- Security updates -->
+  <project path="external/bouncycastle" name="android_external_bouncycastle" remote="android-security" revision="aosp-4.4" />
+  <project path="external/aac" name="android_external_aac" remote="android-security" revision="aosp-4.4" />
+  <project path="external/libvpx" name="android_external_libvpx" remote="android-security" revision="aosp-4.4" groups="pdk" />
+  <project path="external/sonivox" name="android_external_sonivox" remote="android-security" revision="aosp-4.4" groups="pdk" />
+  <project path="external/skia" name="android_external_skia" remote="android-security" revision="aosp-4.4" groups="pdk" />
+  <project path="external/sqlite" name="android_external_sqlite" remote="android-security" revision="aosp-4.4" groups="pdk" />
+  <project path="external/tremolo" name="android_external_tremolo" remote="android-security" revision="aosp-4.4" groups="pdk" />
+  <project path="system/security" name="android_system_security" remote="android-security" revision="aosp-4.4" groups="pdk" />
+  <project path="external/openssl" name="android_external_openssl" remote="android-security" revision="aosp-4.4" groups="pdk" />
+  <project path="external/chromium_org/third_party/openssl" name="android_external_chromium_org_third_party_openssl" remote="android-security" revision="aosp-4.4" groups="pdk" />
+  <project path="external/chromium_org" name="android_external_chromium_org" remote="android-security" revision="aosp-4.4" groups="pdk" />
+  <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="android-security" revision="aosp-4.4" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="android-security" revision="aosp-4.4" />
+  <project path="art" name="android_art" remote="android-security" revision="aosp-4.4" />
+  <project path="dalvik" name="android_dalvik" remote="android-security" revision="aosp-4.4" />
 
   <!-- Track legacy projects maintained by Evervolv  -->
   <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="kitkat" />
