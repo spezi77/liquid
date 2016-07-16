@@ -36,6 +36,7 @@
   <project path="bionic" name="android_bionic" remote="spz" revision="ls-kitkat" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="cm" revision="cm-11.0" />
+  <project path="dalvik" name="android_dalvik" remote="spz" revision="ls-kitkat" />
   <project path="development" name="android_development" remote="sr" revision="kk4.4" />
   <project path="device/common" name="android_device_common" remote="cm" revision="cm-11.0" />
   <project path="external/android-clat" name="platform/external/android-clat" />
@@ -400,6 +401,7 @@
 
   <!-- Track forked projects with Stagefright 2.0 patches -->
   <project path="external/flac" name="android_external_flac" remote="spz" revision="cm-11.0" />
+  <project path="external/skia" name="android_external_skia" remote="spz" revision="cm-11.0" />
   <project path="system/core" name="android_system_core" remote="spz" revision="ls-kitkat" />
   <project path="frameworks/av" name="android_frameworks_av" remote="spz" revision="ls-kitkat" />
   <project path="libcore" name="android_libcore" remote="spz" revision="ls-kitkat" />
@@ -409,7 +411,6 @@
   <project path="external/aac" name="android_external_aac" remote="android-security" revision="aosp-4.4" />
   <project path="external/libvpx" name="android_external_libvpx" remote="android-security" revision="aosp-4.4" groups="pdk" />
   <project path="external/sonivox" name="android_external_sonivox" remote="android-security" revision="aosp-4.4" groups="pdk" />
-  <project path="external/skia" name="android_external_skia" remote="android-security" revision="aosp-4.4" groups="pdk" />
   <project path="external/sqlite" name="android_external_sqlite" remote="android-security" revision="aosp-4.4" groups="pdk" />
   <project path="external/tremolo" name="android_external_tremolo" remote="android-security" revision="aosp-4.4" groups="pdk" />
   <project path="system/security" name="android_system_security" remote="android-security" revision="aosp-4.4" groups="pdk" />
@@ -419,7 +420,6 @@
   <project path="packages/apps/UnifiedEmail" name="android_packages_apps_UnifiedEmail" remote="android-security" revision="aosp-4.4" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="android-security" revision="aosp-4.4" />
   <project path="art" name="android_art" remote="android-security" revision="aosp-4.4" />
-  <project path="dalvik" name="android_dalvik" remote="android-security" revision="aosp-4.4" />
 
   <!-- Track legacy projects maintained by Evervolv  -->
   <project path="hardware/qcom/audio-legacy" name="android_hardware_qcom_audio-legacy" remote="ev" revision="kitkat" />
